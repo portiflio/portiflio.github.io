@@ -1,21 +1,27 @@
-/* Reset and base styles */
+/* Reset و استایل پایه */
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
-  list-style: none;
-  text-decoration: none;
+  padding: 0; 
+  margin:  0; 
+  box-sizing:  border-box; 
+  font-family:  "Rubik",  sans-serif; 
+  list-style:  none; 
+  text-decoration:  none; 
+} 
 }
 
-/* Body styling */
-body {
-  background-color: #615f5f;
-  color: #ffffff;
+/* بدنه صفحه */ body { background-color: #615f5f; color: #ffffff; } 
+
+/* بدنه صفحه * / body { background-color: #615f5f; color: #ffffff; }   
+ 
+   
+   
   overflow-x: hidden;
 }
 
-/* Header styling */
+/* هدر */
+
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -30,85 +36,115 @@ header {
   padding: 32px 15%;
 }
 
-/* Logo styling */
+/* لوگو */
+
+}
+
 .logo {
   color: #ffffff;
   font-size: 41px !important;
   font-weight: 600;
 }
-.logo span {
+.logo 
+}
+span {
   color: #ffa500 !important;
 }
 
-/* Navbar styling */
+/* منو ناوبری */
+
+}
+
 .navbar {
   display: flex;
 }
-.navbar a {
+.navbar 
+}
+a {
   font-weight: 500;
   color: #fff !important;
   margin: 0 25px;
   transition: all ease 0.50s;
 }
-.navbar a.active {
+.navbar 
+}
+a.active {
   color: #ffa500 !important;
 }
-.navbar a:hover {
+.navbar 
+}
+a:hover {
   color: #ffa500 !important;
 }
 
-/* Menu button styles */
+/* دکمه منو موبایل */
+
+}
+
 .menu-btn {
-  background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+  display: none; /* در حالت دسکتاپ مخفی است */
   cursor: pointer;
-  box-shadow: 0px 20px 40px #00000070;
-  border: 1px solid #3b3b3b;
-  padding: 10px 20px;
-  border-radius: 100px;
-  display: flex;
   align-items: center;
+  padding: 10px;
+  border-radius: 50%;
+  background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+  box-shadow: 0px 20px 40px #00000070;
+  transition: all 0.3s ease;
 }
 #menu-icon {
-  font-size: 28px;
-  margin-left: 10px;
-  z-index: 6;
+  
+}
+font-size: 28px;
+  color: #fff;
 }
 
-/* Section styles */
+/* بخش خانه */
+
+}
+
 section {
   padding: 0 15%;
-  margin-top: 80px; /* To prevent overlap with fixed header */
+  margin-top: 80px; /* جلوگیری از پوشش هدر ثابت */
 }
-
-/* Home section */
 .home {
-  position: relative;
+  
+}
+position: relative;
   width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 30px;
-  flex-wrap: wrap; /* Make it responsive */
+  flex-wrap: wrap;
 }
 .home-img {
-  flex: 1 1 45%;
+  
+}
+flex: 1 1 45%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.home-img img {
+.home-img 
+}
+img {
   width: 100%;
-  max-width: 730px;
+  max-width: 
+  max730px;
   height: auto;
   object-fit: contain;
   animation: imgg 2s ease-in-out infinite;
   animation-delay: 2s;
 }
 .home-text {
-  flex: 1 1 45%;
+  
 }
-.home-text span {
+flex: 1 1 45%;
+}
+.home-text 
+}
+span {
   padding: 5px 25px;
   background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
   box-shadow: 0px 20px 40px #00000070;
@@ -119,19 +155,25 @@ section {
   font-size: 15px;
   text-transform: uppercase;
 }
-.home-text h1 {
-  font-size: 3rem; /* Adjust for responsiveness */
+.home-text 
+}
+h1 {
+  font-size: 3rem;
   margin: 23px 0;
 }
-.home-text p {
-  font-size: 1rem; /* Smaller font on smaller screens */
+.home-text 
+}
+p {
+  font-size: 1rem;
   font-weight: 400;
   color: #c3c3c3;
   line-height: 1.5;
   margin-bottom: 30px;
 }
 .btn {
-  display: inline-block;
+  
+}
+display: inline-block;
   padding: 14px 34px;
   background: #ffa500;
   color: #ffffff;
@@ -146,7 +188,6 @@ section {
   background: transparent;
   color: #ffa500;
 }
-/* Additional button style */
 .two {
   background: #141414;
   border: 2px solid #141414;
@@ -159,7 +200,7 @@ section {
   border: 2px solid #ffffff;
 }
 
-/* Share icons */
+/* آیکون‌های شبکه‌های اجتماعی */
 .share {
   position: absolute;
   bottom: 3rem;
@@ -191,7 +232,7 @@ section {
   transform: translateY(-10px);
 }
 
-/* Responsive adjustments */
+/* ریسپانسیو: موبایل و تبلت */
 @media (max-width: 1370px) {
   header {
     padding: 15px 8%;
@@ -204,149 +245,42 @@ section {
   .share {
     left: 4%;
   }
-  /* Adjust font sizes for headings and texts */
   .home-text h1 {
     font-size: 2.5rem;
   }
-  .home-text p {
+  
+  }
+ .home-text p {
     font-size: 0.9rem;
   }
 }
-@media (max-width: 1020px) {
-  .navbar a {
-    margin: 0 15px;
-  }
-}
-@media (max-width: 950px) {
-  .share {
-    display: none;
-  }
-  section {
-    padding: 70px 4%;
-  }
-  header {
-    padding: 11px 4%;
-    background: #2d2d2d;
-  }
-  .home {
-    flex-direction: column;
-    align-items: center;
-  }
-  .home-text {
-    order: 2;
-    text-align: center;
-  }
-  .home-img {
-    margin: auto;
-    width: 100%;
-  }
-  .home-img img {
-    max-width: 90%;
-  }
-}
+
+/* نمایش دکمه منو موبایل در موبایل */
 @media (max-width: 850px) {
-  /* Mobile menu toggle styles */
-  .navbar {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    padding: 40px 50px;
-    flex-direction: column;
-    background: #2d2d2d;
-    transition: all 0.4s ease-in-out;
-    left: 100%; /* Hidden by default */
-  }
-  .navbar.open {
-    left: 0; /* Show menu when open */
-  }
-  .navbar a {
-    display: block;
-    color: #c3c3c3;
-    padding: 0;
-    margin: 0 0 40px 0;
-    font-size: 2rem;
-    font-weight: 400;
-  }
-  /* Menu button positioning */
+  /* نمایش دکمه منو */
   .menu-btn {
-    position: fixed;
-    top: 20px;
-    right: 20px;
+    display: flex;
     z-index: 1100;
   }
-}
-@media (max-width: 500px) {
-  .btn {
-    padding: 9px 28px;
-    font-size: 14px;
-  }
-  /* Smaller images and texts */
-  .home-text h1 {
-    font-size: 2rem;
-  }
-  .home-text p {
-    font-size: 0.8rem;
-  }
-}
-
-/* Small Screen Responsive Styles */
-@media (max-width: 600px) {
-  /* Adjust header padding and background */
-  header {
-    padding: 11px 4%;
-    background: #2d2d2d; /* Solid background for visibility */
-  }
-
-  /* Make logo smaller for small screens */
-  .logo {
-    font-size: 2rem;
-  }
-
-  /* Hide social share icons or reposition if needed */
-  .share {
-    display: none;
-  }
-
-  /* Navigation menu styles for mobile */
+  /* منو ناوبری در حالت مخفی */
   .navbar {
     position: fixed;
     top: 0;
     right: 0;
-    width: 75%; /* Or full width if preferred */
+    width: 75%;
     height: 100vh;
     background-color: #2d2d2d;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding-top: 80px;
-    transition: all 0.3s ease-in-out;
     transform: translateX(100%);
-    /* Hidden by default, slide in when open */
+    transition: all 0.3s ease-in-out;
+    z-index: 1100;
   }
+  /* حالت باز شدن منو */
   .navbar.open {
     transform: translateX(0);
   }
-
-  /* Hamburger menu button styling */
-  .menu-btn {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1100;
-    padding: 10px 15px;
-    background: linear-gradient(130.08deg, #383528, #191919);
-    border-radius: 50%;
-    box-shadow: 0px 20px 40px #00000070;
-    cursor: pointer;
-  }
-  #menu-icon {
-    font-size: 24px;
-    color: #fff;
-  }
-
-  /* Navigation links styles */
+  /* لینک‌ها در موبایل */
   .navbar a {
     color: #c3c3c3;
     font-size: 1.5rem;
@@ -355,36 +289,19 @@ section {
     width: 100%;
     text-align: center;
   }
+}
 
-  /* Home section adjustments */
-  .home {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 60px 4%;
-  }
-
-  /* Home image adjustments */
-  .home-img {
-    max-width: 90%;
-    margin: 20px 0;
-  }
-  .home-img img {
-    width: 100%;
-    max-width: 400px;
-  }
-
-  /* Home text styles */
+/* دیگر حالت‌های موبایل */
+@media (max-width: 600px) {
+  /* تغییرات کوچک در فونت‌ها و padding */
   .home-text h1 {
     font-size: 2rem;
     margin: 15px 0;
   }
   .home-text p {
     font-size: 0.9rem;
-    line-height: 1.4;
   }
-
-  /* Buttons */
+  /* دکمه‌ها */
   .btn {
     padding: 10px 20px;
     font-size: 14px;
