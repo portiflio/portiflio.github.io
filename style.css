@@ -1,27 +1,21 @@
-/* Reset و استایل پایه */
+/* Reset and base styles */
 * {
-  padding: 0; 
-  margin:  0; 
-  box-sizing:  border-box; 
-  font-family:  "Rubik",  sans-serif; 
-  list-style:  none; 
-  text-decoration:  none; 
-} 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
 
-/* بدنه صفحه */ body { background-color: #615f5f; color: #ffffff; } 
-
-/* بدنه صفحه * / body { background-color: #615f5f; color: #ffffff; }   
- 
-   
-   
+/* Body styling */
+body {
+  background-color: #615f5f;
+  color: #ffffff;
   overflow-x: hidden;
 }
 
-/* هدر */
-
-}
-
+/* Header styling */
 header {
   display: flex;
   justify-content: space-between;
@@ -36,115 +30,85 @@ header {
   padding: 32px 15%;
 }
 
-/* لوگو */
-
-}
-
+/* Logo styling */
 .logo {
   color: #ffffff;
   font-size: 41px !important;
   font-weight: 600;
 }
-.logo 
-}
-span {
+.logo span {
   color: #ffa500 !important;
 }
 
-/* منو ناوبری */
-
-}
-
+/* Navbar styling */
 .navbar {
   display: flex;
 }
-.navbar 
-}
-a {
+.navbar a {
   font-weight: 500;
   color: #fff !important;
   margin: 0 25px;
   transition: all ease 0.50s;
 }
-.navbar 
-}
-a.active {
+.navbar a.active {
   color: #ffa500 !important;
 }
-.navbar 
-}
-a:hover {
+.navbar a:hover {
   color: #ffa500 !important;
 }
 
-/* دکمه منو موبایل */
-
-}
-
+/* Menu button styles */
 .menu-btn {
-  display: none; /* در حالت دسکتاپ مخفی است */
-  cursor: pointer;
-  align-items: center;
-  padding: 10px;
-  border-radius: 50%;
   background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+  cursor: pointer;
   box-shadow: 0px 20px 40px #00000070;
-  transition: all 0.3s ease;
+  border: 1px solid #3b3b3b;
+  padding: 10px 20px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
 }
 #menu-icon {
-  
-}
-font-size: 28px;
-  color: #fff;
-}
-
-/* بخش خانه */
-
+  font-size: 28px;
+  margin-left: 10px;
+  z-index: 6;
 }
 
+/* Section styles */
 section {
   padding: 0 15%;
-  margin-top: 80px; /* جلوگیری از پوشش هدر ثابت */
+  margin-top: 80px; /* To prevent overlap with fixed header */
 }
+
+/* Home section */
 .home {
-  
-}
-position: relative;
+  position: relative;
   width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 30px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Make it responsive */
 }
 .home-img {
-  
-}
-flex: 1 1 45%;
+  flex: 1 1 45%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.home-img 
-}
-img {
+.home-img img {
   width: 100%;
-  max-width: 
-  max730px;
+  max-width: 730px;
   height: auto;
   object-fit: contain;
   animation: imgg 2s ease-in-out infinite;
   animation-delay: 2s;
 }
 .home-text {
-  
+  flex: 1 1 45%;
 }
-flex: 1 1 45%;
-}
-.home-text 
-}
-span {
+.home-text span {
   padding: 5px 25px;
   background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
   box-shadow: 0px 20px 40px #00000070;
@@ -155,25 +119,19 @@ span {
   font-size: 15px;
   text-transform: uppercase;
 }
-.home-text 
-}
-h1 {
-  font-size: 3rem;
+.home-text h1 {
+  font-size: 3rem; /* Adjust for responsiveness */
   margin: 23px 0;
 }
-.home-text 
-}
-p {
-  font-size: 1rem;
+.home-text p {
+  font-size: 1rem; /* Smaller font on smaller screens */
   font-weight: 400;
   color: #c3c3c3;
   line-height: 1.5;
   margin-bottom: 30px;
 }
 .btn {
-  
-}
-display: inline-block;
+  display: inline-block;
   padding: 14px 34px;
   background: #ffa500;
   color: #ffffff;
@@ -188,6 +146,7 @@ display: inline-block;
   background: transparent;
   color: #ffa500;
 }
+/* Additional button style */
 .two {
   background: #141414;
   border: 2px solid #141414;
@@ -200,7 +159,7 @@ display: inline-block;
   border: 2px solid #ffffff;
 }
 
-/* آیکون‌های شبکه‌های اجتماعی */
+/* Share icons */
 .share {
   position: absolute;
   bottom: 3rem;
@@ -253,7 +212,7 @@ display: inline-block;
  .home-text p {
     font-size: 0.9rem;
   }
-}
+
 
 /* نمایش دکمه منو موبایل در موبایل */
 @media (max-width: 850px) {
