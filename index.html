@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Portfolio</title>
-<!-- استدر  CSS  --> 
-<link  rel="stylesheet" href="style.css" />
+<!DOCTYPE  html> 
+<html  lang="fa"> 
+<head> 
+<meta  charset ="UTF-8">"  /> 
+<meta  name="viewport"  content="width=device-width,  initial-scale=1.0" />
+<title>پورتفولیوی من</title>
+<!-- استایل -->
+<link rel="stylesheet" href="style.css" />
 <!-- آیکون‌های Boxicons -->
 <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
 <!-- فونت گوگل -->
@@ -14,44 +14,41 @@
 <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
 </head>
 <body>
-<!-- هدر -->
 <header>
   <div>
     <a href="#" class="logo"><span>M</span>azin</a>
   </div>
-  <div class="navbar">
-    <a href="http://localhost/Portfolio/index.html" class="active">Portfolio</a>
-    <a href="about page/about.html">About</a>
+  <div class="navbar" id="navbar">
+    <a href="#" class="active">Portfolio</a>
+    <a href="#">About</a>
     <a href="#">Service</a>
     <a href="#">Blog</a>
-    <a href="http://localhost/Portfolio/contacts/contacts.html">Contacts</a>
+    <a href="#">Contacts</a>
   </div>
   <!-- دکمه منو موبایل -->
   <div class="menu-btn" id="menuBtn">
     <span>MENU</span>
-    <div class="bx bx-menu" id="menu-icon"></div>
+    <div class='bx bx-menu' id="menu-icon"></div>
   </div>
 </header>
 
-<!-- بخش خانه -->
 <section class="home">
   <div class="home-text">
-    <span>SOFTWARE DEVELOPER</span>
-    <h1>Abdul Razeq</h1>
-    <p>i am a designer, illustrator, and creator of courses, templates, wireframe kits, and the occasionally useful side-project</p>
+    <span>توسعه‌دهنده نرم‌افزار</span>
+    <h1>عبدالرزاق</h1>
+    <p>من یک طراح، تصویرگر و سازنده دوره‌ها، قالب‌ها و پروژه‌های جانبی هستم.</p>
     <div class="main-btn">
-      <a href="#" class="btn">Download Cv</a>
-      <a href="#" class="btn two">Hire Me Now</a>
+      <a href="#" class="btn">دانلود رزومه</a>
+      <a href="#" class="btn two">استخدام کن</a>
     </div>
   </div>
   <div class="home-img">
-    <img src="home.jpg" alt="image" />
+    <img src="home.jpg" alt="تصویر" />
   </div>
 </section>
 
-<!-- آیکون‌های شبکه‌های اجتماعی -->
 <div class="share">
-  <p>Check out my:</p>
+  <p>در شبکه‌های اجتماعی من را دنبال کنید:</p>
   <div class="social">
     <a href="#"><i class='bx bxl-facebook'></i></a>
     <a href="#"><i class='bx bxl-twitter'></i></a>
@@ -60,13 +57,10 @@
   </div>
 </div>
 
-<!-- اسکریپت جاوااسکریپت -->
-<script src="https://unpkg.com/scrollreveal"></script>
-<!-- اسکریپت جاوااسکریپت شخصی -->
 <script>
   // منو موبایل
   const menuBtn = document.getElementById('menuBtn');
-  const navbar = document.querySelector('.navbar');
+  const navbar = document.getElementById('navbar');
 
   menuBtn.addEventListener('click', () => {
     navbar.classList.toggle('open');
